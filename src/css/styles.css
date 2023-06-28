@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Quantico:ital,wght@1,700&display=swap');
+
+/* font-family: 'Athiti', sans-serif;
+font-family: 'Quantico', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Athiti', sans-serif;
+}
+
+main, footer {
+    border: 1px solid black;
+    background-color: black;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.sectionMarge {
+    width: 90%;
+    margin: 30px auto;
+    border: 1px solid white;
+}
+
+.navigation-menu {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-menu-navegation{
+    background-color: black;
+    border: 1px solid white;
+    width: 8px;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -6px;
+}
+
+.navigation-menu li {
+    margin: 0;
+    border-radius: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #020202;
+    border: 1px solid white;
+    margin-top: 5px;
+    position: relative;
+}
+
+.navigation-menu li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #161616;
+
+}
+
+.navigation-menu li.active {
+    background-color: #d6d4d4;
+    background-image: url("../img/ball.png");
+    /* Outros estilos de destaque para a seção atual */
+}
+
+.swiper-pagination-bullet {
+    background-color: lightgray;
+}
+
+/* HEADER */
+
+.logoStyle {
+    display: flex;
+    gap:0px;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 10px;
+    margin: 0px 0px 30px 0px;
+}
+
+/* CHAMADA */
+.callText {
+    height: 100vh;
+    width: 100%;
+}
+
+#btnPlayHighlights {
+    background-color: #000000;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 1%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+}
+
+#btnPlayHighlights img {
+    height: 30px;
+}
+
+.callText>div {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contentChamada {
+    margin: 0 auto;
+    height: 700px;
+    width: 1200px;
+    position: relative;
+    z-index: 2;
+    transition: transform 3s ease;
+}
+
+.retirarContentChamada {
+    transform: scale(0.001) translate(100%);
+}
+
+.caixaTitulo1Chamada {
+    z-index: 1;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    margin-left: 25%;
+    text-align: left;
+}
+
+.caixaTitulo1Chamada h1 {
+    height: 100%;
+    font-size: 120px;
+    font-family: 'Quantico', sans-serif;
+    text-shadow: darkgray 2px 2px 10px;
+
+
+}
+
+.caixaTitulo2Chamada {
+    height: 32px;
+    width: 450px;
+    z-index: 2;
+    position: relative;
+    margin-top: 530px;
+    margin-left: -750px;
+}
+
+.caixaTitulo2Chamada h2 {
+    font-weight: bolder;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+#tenis {
+    position: relative;
+    z-index: 3;
+    width: 500px;
+    margin-top: -40%;
+    margin-left: -55px;
+    opacity: 1;
+}
+
+#bola {
+    position: absolute;
+    z-index: 2;
+    height: 335px;
+    width: 335px;
+    background-color: #413e3e;
+    border: 1px solid white;
+    opacity: 0.5;
+    border-radius: 335px;
+    display: inline-block;
+    margin-top: 0%;
+}
+
+.caixaImagensChamada {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    width: 370px;
+    height: 335px;
+    margin-top: -60px;
+    margin-left: 700px;
+}
+
+.video-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    margin-top: 0px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    pointer-events: none;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 250px);
+    transition: opacity 3s ease;
+}
+
+.video-container-alto iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    pointer-events: none;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 250px);
+    transition: opacity 3s ease;
+}
+
+.video-foreground {
+    pointer-events: none;
+}
+
+.mostrarVideo {
+    opacity: 1;
+}
+
+/* PRODUTOS */
+
+/* DESTAQUES */
+
+.destaques {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.destaques p, .destaques h3, .destaques button {
+    margin: 18px;
+}
+
+.destaques img {
+    width: 275px;
+    height: 234px;
+    margin-bottom: 40px;
+
+}
+
+.fundo {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    border: 10px double darkgray;
+}
+
+/* GALERIA */
+
+/* Slide historia do Jordan */
+.jordan, .livro {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.jordan p {
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+}
+
+.jordan>img {
+    border: 4px solid wheat;
+    border-radius: 20px;
+    height: 374px;
+}
+
+.tenis {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.tenis p {
+    width: 30%;
+    font-weight: bold;
+}
+
+/* Slide Filme */
+.filme {
+
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slide livro */
+.livro p {
+    text-align: justify;
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+/* MARCAS */
+
+.marcas img {
+    width: 90%;
+}
+
+/*CONVERSAO*/
+.containerConversaoReviews {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.conversao {
+    width: 60%;
+}
+
+
+form {
+    display: inline-block;
+    width: 500px;
+    margin-top: 50px;
+
+}
+
+input, textarea {
+
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 15px 0px;
+    outline: none;
+}
+
+label {
+    display: block;
+    width: 100%;
+}
+
+input[type="submit"] {
+
+    display: inline-block;
+    padding: 5px 20px;
+    width: 30%;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #d6d4d4, #161616);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+
+}
+
+input[type="submit"]:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #494747;
+}
+
+input[type="submit"]:hover:before {
+    transform: translateX(0);
+}
+
+input[type="submit"]:hover:after {
+    opacity: 1;
+}
+
+
+/* SOBRE / FAQ */
+
+.sobreFaq {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+
+}
+
+.sobre {
+    border-right: 1px solid white;
+    width: 40%;
+    display: block;
+    padding-right: 50px;
+}
+
+.sobre p {
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+}
+
+details {
+    text-align: start;
+    margin: 20px;
+    cursor: pointer;
+}
+
+details p {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(190, 188, 188);
+    color: black;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+summary {
+    text-align: start;
+    font-style: italic;
+}
+
+
+
+/* PROVA SOCIAL */
+
+.containerborda {
+    border: 1px solid white;
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.containerborda img {
+    display: flex;
+    margin: auto;
+
+}
+
+/* FOOTER */
+footer {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer>div:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.redesSociais {
+
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    margin: auto;
+
+}
